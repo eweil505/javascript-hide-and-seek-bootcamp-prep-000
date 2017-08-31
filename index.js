@@ -21,10 +21,10 @@ function nestedTarget() {
 
 function increaseRankBy(n) {
   const rankedLis = document.querySelectorAll('ul.ranked-list li');
-  debugger;
   for (let i = 0; i < rankedLis.length; i++) {
     var innerEl = rankedLis[i].innerHTML;
     innerEl = (parseInt(innerEl) + n).toString();
+    debugger;
   }
 }
 
