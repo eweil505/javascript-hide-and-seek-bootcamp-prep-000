@@ -24,7 +24,7 @@ function increaseRankBy(n) {
   for (let i = 0; i < rankedLis.length; i++) {
     var innerEl = rankedLis[i].innerHTML;
     innerEl = (parseInt(innerEl) + n).toString();
-    rankedLis[i] = innerEl; 
+    rankedLis[i].innerHTML = innerEl; 
   }
 }
 
