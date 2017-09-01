@@ -29,7 +29,7 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  let current = document.querySelectorAll('div#grand-node')
+  let current = document.getElementById('div#grand-node')
   let next = current.children[0];
   debugger;
   while (next) {
