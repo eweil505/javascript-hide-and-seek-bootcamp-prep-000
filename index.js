@@ -24,19 +24,19 @@ function increaseRankBy(n) {
   for (let i = 0; i < rankedLis.length; i++) {
     var innerEl = rankedLis[i].innerHTML;
     innerEl = (parseInt(innerEl) + n).toString();
-    rankedLis[i].innerHTML = innerEl; 
+    rankedLis[i].innerHTML = innerEl;
   }
 }
 
 function deepestChild() {
   let current = document.querySelectorAll('div#grand-node')
   let next = current.children[0];
-  
+
   while (next) {
       current = next;
       next = next.children[0];
     }
 
-  return current; 
+  return current;
 
 }
